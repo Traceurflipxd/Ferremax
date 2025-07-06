@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Catálogo de Productos</h1>
+  <div id="filtros">
+    <label for="filtro-categoria">Categoría:</label>
+    <select id="filtro-categoria"></select>
+    <label for="filtro-busqueda">Buscar:</label>
+    <input type="text" id="filtro-busqueda" placeholder="Buscar producto...">
+    <button id="btn-filtrar">Filtrar</button>
+  </div>
+  <div id="productos-lista"></div>
+  <button onclick="window.location.href='carrito.html'">Ver Carrito</button>
+  <script src="catalogo.js"></script>
+</body>
+</html> 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Ferremax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="correo" placeholder="Correo">
+    <input type="password" id="contraseña" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+    <p id="mensaje-error" style="color: red;"></p>
+  </div>
+
+  <div id="menu" style="display:none;">
+    <h2>Menú Principal</h2>
+    <button onclick="mostrarFormulario('producto')">Crear Producto</button>
+    <button onclick="mostrarFormulario('categoria')">Crear Categoría</button>
+
+    <div id="form-producto" style="display:none;">
+        <h3>Nuevo Producto</h3>
+        <input type="text" id="nombre-producto" placeholder="Nombre">
+        <input type="number" id="precio-producto" placeholder="Precio">
+        <select id="categoria-producto">
+            <option value="">Selecciona una categoría</option>
+        </select>
+        <button onclick="crearProducto()">Guardar Producto</button>
+    </div>
+
+    <div id="form-categoria" style="display:none;">
+      <h3>Nueva Categoría</h3>
+      <input type="text" id="nombre-categoria" placeholder="Nombre">
+      <button onclick="crearCategoria()">Guardar Categoría</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+  <script src="Main.js"></script>
+</body>
+</html>
